@@ -1,0 +1,328 @@
+/* Loader Starts Here */
+/* Loader */
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader h1 {
+  font-size: 8vh;
+  color: #3b4ef8;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 6vh;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 5px solid whitesmoke;
+  border-top-color: #2d6760;
+  font-family: "Roboto Slab", serif;
+  border-radius: 50%;
+  animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/*Loader Ends Here  */
+
+/* Utility Classes */
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.garamond {
+  font-family: "EB Garamond", serif;
+}
+
+.krub {
+  font-family: "Krub", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.lato {
+  font-family: "Lato", sans-serif !important;
+}
+.bottomLine {
+  margin-bottom: 0px !important;
+}
+
+.bottomLineExt::after {
+  content: "";
+  display: block;
+  color: #124265;
+  height: 1rem;
+  width: 5rem;
+}
+
+.orange {
+  color: #ff7f5d;
+}
+.colorDarkBlue {
+  color: #124265 !important;
+}
+
+.bgDarkBlue {
+  background-color: #124265 !important;
+}
+
+.lightBlue {
+  color: #2487ce !important;
+}
+
+.bgLightBlue {
+  background-color: #2487ce !important;
+}
+
+.colorDarkGreen {
+  color: #2d6760;
+}
+
+.bgDarkGreen {
+  background-color: #2d6760;
+}
+
+.colorLightGreen {
+  color: #70b9b0b8;
+}
+
+.bgLightGreen {
+  background-color: #70b9b0;
+}
+
+.bgGain {
+  background-color: #f6f7ff;
+}
+
+.txtGray {
+  color: #444444;
+}
+
+.borderLight {
+  border: 1px solid #dee2e6;
+}
+
+.scale {
+  transform: scale(2.5);
+  margin-top: 1.2rem !important;
+  margin-right: 1.8rem !important;
+}
+
+.font12px{
+    font-size: 12px;
+}
+
+.font15px {
+  font-size: 15px;
+}
+
+.font18px {
+  font-size: 18px;
+}
+
+.font24px {
+  font-size: 24px;
+}
+
+.font30px {
+  font-size: 30px;
+}
+
+.font32px{
+    font-size: 32px;
+}
+
+.font36px {
+  font-size: 36px;
+}
+
+.font48px {
+  font-size: 48px;
+}
+
+.font56px {
+  font-size: 56px;
+}
+
+.font14px {
+  font-size: 13px;
+}
+
+.font20px{
+    font-size: 20px;
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+/* Section Hero Starts here */
+
+.secHero {
+  height: 60vh;
+  background-image: url("img/hero-background.jpg");
+  box-shadow: inset 0 0 0 1000px #5bd0c2b4;
+  background-size: cover;
+}
+
+/* Section Services Start Here */
+
+.secServices{
+    background-color: #F2F9F8;
+    color: white;
+  }
+  
+  .secServices .card{
+    height: 240px!important;
+    width: 355px!important;
+    background-color:#F8FBFE;
+    box-shadow: none!important;
+  }
+
+  .secServices .card a{
+  font-size: 18px!important;
+
+}
+
+  .secServices .card-body{
+    /* padding: 1rem 1rem; */
+    padding-bottom: 1rem;
+
+  }
+  .secServices .iconDiv {
+  height: 4.8rem;
+  width: 4.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  }
+  
+  .secServices .iconDiv i {
+  font-size: 32px !important;
+  color: #70b9b0;
+  }
+  
+/* Section Services Ends Here */
+
+/* Section Call To Action Starts Here */
+
+.secCallToAction{
+    height: 50vh;
+    background-image: url('img/call-to-action-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color:#2d6760bb;
+    background-blend-mode:darken;
+}
+
+/* Section Call To Action Ends Here */
+
+/* Section Team Starts Here */
+
+
+.secTeam .card{
+    height: 438px!important;
+    width: 356px!important;
+    padding: 30px 20px;
+} 
+
+.secTeam .card .imgDiv{
+    height: 190px;
+    width: 190px;
+    margin: auto;
+    /* display: flex;
+    justify-content: center; */
+}
+.secTeam .card .imgDiv img{
+    
+    border-radius: 100%!important;
+}
+
+.secTeam .card .card-body p{
+
+    padding-top: 10px;
+    margin-bottom: 16px;
+    opacity: 0.5;
+    text-align: center!important;
+}
+
+/* Section Team Ends Here */
+
+
+@media screen and (min-width:0px) and (max-width:566px) {
+    
+    .secServices .card{
+        height: 240px!important;
+        width: 300px!important;
+        background-color:#F8FBFE;
+        box-shadow: none!important;
+      }
+
+      .secServices .card .card-body div{
+        width: 290px!important;
+    }
+
+/* Section Team Starts Here */
+
+
+.secTeam .card{
+    height: 470px!important;
+    width: 356px!important;
+    padding: 30px 20px;
+} 
+
+.secTeam .card .imgDiv{
+    height: 190px;
+    width: 190px;
+    margin: auto;
+    /* display: flex;
+    justify-content: center; */
+}
+.secTeam .card .imgDiv img{
+    
+    border-radius: 100%!important;
+}
+
+.secTeam .card .card-body p{
+
+    padding-top: 10px;
+    margin-bottom: 16px;
+    opacity: 0.5;
+    text-align: center!important;
+}
+
+/* Section Team Ends Here */
+
+}
